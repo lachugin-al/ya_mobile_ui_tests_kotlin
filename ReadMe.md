@@ -1,25 +1,26 @@
 # Mobile UI Tests on Kotlin
 
-Данный проект выполняет E2E тесты для тестового приложения на платформах Android и iOS. В качестве фреймворка используется Appium.
+This project performs E2E tests for a test application on Android and iOS platforms. Appium is used as the framework.
+Project Structure
 
-## Структура проекта
+## Project Structure
 
-Весь код тестов находится в папке src/test/java:
+All test code is located in the src/test/java folder:
 
-* app - классы для подключения к приложению, общие для всех тест-кейсов:
-    * Configuration - содержит параметры запуска: платформу (Android, iOS).
-    * AppLauncher - главный класс, отвечает за запуск приложения с различными параметрами.
-    * App - класс запущенного приложения. Содержит в себе драйвер.
-    * AndroidDriver, IosDriver - настройки драйверов по платформам (Android, iOS).
-* pages - классы page object-ов
-* uitests - классы E2E UI тестов
-* utils - утилитарные классы
+* app - classes for connecting to the application, common to all test cases:
+    * Configuration - contains launch parameters: platform (Android, iOS).
+    * AppLauncher - the main class, responsible for launching the application with various parameters.
+    * App - the launched application class. Contains the driver.
+    * AndroidDriver, IosDriver - driver settings for platforms (Android, iOS).
+* pages - page object classes
+* uitests - E2E UI test classes
+* utils - utility classes
 
-#### Локальный запуск тестов
+#### Local Test Execution
 
-1. Склонируйте репозиторий;
-2. Запустите Android Studio, откройте папку проекта;
-3. Положите версию приложения (пример: android.apk) в корневую папку проекта.
-4. Запустите виртуальный девайс;
-5. Запустите Appium в терминале (appium server -p 4723 -a 127.0.0.1 -pa /wd/hub).
-6. Выбертите тесты которые хотите запустить
+1. Clone the repository;
+2. Launch Android Studio and open the project folder;
+3. Place the application version (example: android.apk) in the root folder of the project.
+4. Launch a virtual device;
+5. Start Appium in the terminal (appium server -p 4723 -a 127.0.0.1 -pa /wd/hub).
+6. Select the tests you want to run.
