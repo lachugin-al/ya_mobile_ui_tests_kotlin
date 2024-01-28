@@ -1,7 +1,6 @@
 # Mobile UI Tests on Kotlin
 
 This project performs E2E tests for a test application on Android and iOS platforms. Appium is used as the framework.
-Project Structure
 
 ## Project Structure
 
