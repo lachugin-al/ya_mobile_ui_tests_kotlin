@@ -154,11 +154,12 @@ open class PageObject(val app: App) {
         return element
     }
 
-    fun scrollScreen(to: To, scrollRatio: Double = defaultScrollRatio) {
+    fun scrollScreen(to: To, scrollRatio: Double = defaultScrollRatio): PageObject {
         val screenSize = driver!!.manage().window().size
         val scrollAreaSize = Dimension((screenSize.width * scrollRatio).toInt(), (screenSize.height * scrollRatio).toInt())
         val scrollAreaLocation = Point((screenSize.width - scrollAreaSize.width) / 2, (screenSize.height - scrollAreaSize.height) / 2)
         scrollArea(scrollAreaLocation, scrollAreaSize, to)
+        return this
     }
 
     protected fun scrollArea(location: Point, size: Dimension, to: To) {
