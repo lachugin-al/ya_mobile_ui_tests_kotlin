@@ -22,5 +22,5 @@ All test code is located in the src/test/java folder:
 3. Place the application version (example: android.apk) in the root folder of the project;
 4. Launch a virtual device;
 5. Install appium, appium-uiautomator2-driver, appium-xcuitest-driver. Docs https://github.com/appium;
-6. Start Appium 2.4+ in the terminal (appium server -p 4723 -a 127.0.0.1 -pa /wd/hub);
+6. Start Appium v2 in the terminal (appium server --allow-cors);
 7. Select the tests you want to run.
